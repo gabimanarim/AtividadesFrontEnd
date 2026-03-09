@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cores</title>
+
+    <!-- ********** CSS **********-->
+     <link rel="stylesheet" href="styles.css">
+    <!--Fonte Google (Roboto)-->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1> • Color API •</h1>
+    <p>A cor certa começa com o código certo.</p>
+    <br>
+
+    <div class="area-busca">
+        <input type="text" id="hexInput" placeholder="Digite o HEX (ex:ff8da1)">
+
+        <!--!BOTÕES QUE CHAMAM FUNÇÃO-->
+        <button onclick="buscarCor()">
+            <img src="lupa.png" class="icone">
+            Buscar
+        </button>
+        <button onclick="limparTabela()">
+            <img src="limpar.png" class="icone">
+            Limpar
+        </button>
+
+    </div>
+
+    <div id="loading">Carregando...</div>
+
+    <div id="erro">Erro ao buscar dados</div>
+
+    <!--!TABELA-->
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>HEX</th>
+            </tr>
+        </thead>
+
+        <!--!INFO ATRAVÉS DO JS-->
+        <tbody id="tabelaCores"><!--Dados serão carregados automaticamente--></tbody>
+    </table>
+
+    <!--!DETALHE DA COR SELECIONADA-->
+    <div id="detalhe">
+        <p id="nomeCor"></p>
+        <p id="hexCor"></p>
+        <p id="rgbCor"></p>
+    </div>
+
+    <!-- ********** JS **********-->
+     <script src="app.js"></script>
+    
+</body>
+</html>

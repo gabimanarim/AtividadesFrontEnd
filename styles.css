@@ -1,0 +1,78 @@
+/**ESTILO GERAL**/
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: rgb(245, 244, 242);
+}
+
+/**TÍTULO**/
+h1{color: black;}
+
+/**AREA DE BUSCA**/
+.area-busca{margin: 20px;}
+
+/****/
+input{
+    padding: 8px;
+    border-radius:20px;
+    border: 1px solid rgb(57, 57, 57);
+}
+
+button{
+    padding: 8px 12px; 
+    border-radius: 20px;
+    border: 1px solid rgb(57, 57, 57);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/**Icone dentro do botão**/
+.icone{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/**EFEITO passar o mouse**/
+button:hover{background-color: rgb(182, 84, 100);}
+
+/**TABELA: estrutura **/
+table{
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+/**TABELA: células html **/
+td, th{
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+    font-size: 14px;
+}
+
+
+/**EFEITO passar o mouse na linha**/
+tbody tr:hover{
+    outline: 3px solid black;
+    cursor:pointer;
+}
+
+#loading{
+    display: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#erro{
+    display: none;
+    margin: 10px;
+    color: rgb(182, 84, 100);
+}
+
+#detalhe{margin-top: 20px;}
+
+
